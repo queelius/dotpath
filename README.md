@@ -1,14 +1,18 @@
 # `dotpath`: The Master Addressing Engine
 
+> "The limits of my language mean the limits of my world."
+>
+> — Ludwig Wittgenstein
+
+An addressing engine should not be a static tool, but a simple, extensible machine. Its intelligence should not live in a monolithic central function, but within small, self-contained, "expert" components that can be added, removed, or replaced.
+
 `dotpath` is not just another library for accessing nested data. It is a powerful, extensible, and philosophically pure engine for defining, evaluating, and serializing complex data paths. It is the foundational "addressing layer" for the entire `dot` ecosystem.
 
 ## The Philosophy: From Brittle Logic to an Extensible Machine
 
 Most data-accessing tools have a fatal flaw: their logic is hard-coded. They have a fixed set of features, and if you need a new capability—like fuzzy key matching or a custom filter—you are out of luck. You either fork the library or write complex, brittle logic on top of it.
 
-`dotpath` is built on a different philosophy:
-
-> An addressing engine should not be a static tool, but a simple, extensible machine. Its intelligence should not live in a monolithic central function, but within small, self-contained, "expert" components that can be added, removed, or replaced.
+`dotpath` is built on a different philosophy.
 
 This is the core idea of `dotpath`. It provides a `PathEngine` that acts as a simple orchestrator. The real power comes from `PathSegment` classes—small, expert classes that each know how to do one thing perfectly:
 
@@ -226,4 +230,3 @@ pip install "dotpath[fuzzy]"
 
 This project is licensed under the MIT License.
 
-> "The limits of my language mean the limits of my world." - Ludwig Wittgenstein

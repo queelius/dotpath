@@ -10,9 +10,9 @@ except ImportError:
 from .core import create_default_engine
 
 def main():
-    """The command-line interface for dotpath-x."""
+    """The command-line interface for dotpath."""
     parser = argparse.ArgumentParser(
-        description="Query or transform JSON/YAML data using dotpath-x expressions."
+        description="Query or transform JSON/YAML data using dotpath expressions."
     )
 
     mode_group = parser.add_mutually_exclusive_group()
