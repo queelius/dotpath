@@ -1,0 +1,8 @@
+*.pyc
+__pycache__
+*.pyo
+*.egg-info
+dist
+build
+*.egg
+*.log
